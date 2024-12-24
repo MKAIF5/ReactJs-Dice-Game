@@ -1,14 +1,11 @@
+import Home from './components/Home'
 import './App.css'
 
 function App() {
 
   return (
     <>
-    
-    <div className='text-center text-orange-500 text-2xl'>
-      Dice Game
-    </div>
-    
+      <Home />
     </>
   )
 
