@@ -11,7 +11,7 @@ const Home = () => {
                 <h1 className='text-gray-700 font-bold text-7xl animate-slide-in'>Dice Game</h1>
                 <div className='flex justify-center'>
                     <Link
-                        to={'/game'}
+                        to={'/select'}
                         className='p-3 w-48 border-4 border-dotted border-gray-400
                         bg-transparent shadow-lg shadow-slate-400 duration-500 ease-in-out
                         hover:scale-110 text-center outline-none'
