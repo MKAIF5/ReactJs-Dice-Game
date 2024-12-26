@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2'
+import "./Animate.css"
+import { Link } from 'react-router-dom';
 
 const Select = () => {
 
@@ -26,14 +28,14 @@ const Select = () => {
             <div>
 
                 <div className='my-5 text-center font-bold text-3xl sm:text-5xl text-gray-700'>
-                    <h1>Let's Play </h1>
+                    <h1 className='animate-slide-in'>Let's Play </h1>
                 </div>
 
                 <div className='my-40 cursor-pointer'>
                     <h1 className='mb-10 font-bold text-center text-gray-700
-                  text-2xl md:text-4xl '>Select The Number</h1>
-                    <div className='flex flex-wrap gap-5 justify-center'>
+                  text-2xl md:text-4xl animate-slide-in'>Select The Number</h1>
 
+                    <div className='flex flex-wrap gap-5 justify-center animate-slide-in'>
                         {
                             numberOfDiv.map((num) => (
                                 <div
@@ -49,12 +51,16 @@ const Select = () => {
                             ))}
                     </div>
                     <div className='flex justify-center mt-10'>
-                        <button className='bg-gray-500 p-3 w-40'>Next</button>
+                        <Link
+                        to={"/dice"}
+                        className='bg-transparent border-2 border-dotted p-3
+                       border-black w-40 shadow-lg hover:scale-105 transition transform
+                       outline-none animate-slide-in text-center'>Next</Link>
                     </div>
                 </div>
-            </div >
+            </div>
         </>
-    )
-}
+    );
+};
 
 export default Select
