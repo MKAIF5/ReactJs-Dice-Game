@@ -31,11 +31,12 @@ const Select = () => {
                     <h1 className='animate-slide-in'>Let's Play </h1>
                 </div>
 
-                <div className='my-40 cursor-pointer'>
+                <div className='my-40'>
                     <h1 className='mb-10 font-bold text-center text-gray-700
                   text-2xl md:text-4xl animate-slide-in'>Select The Number</h1>
 
-                    <div className='flex flex-wrap gap-5 justify-center animate-slide-in'>
+                    <div className='flex flex-wrap gap-5 justify-center animate-slide-in
+                    cursor-pointer'>
                         {
                             numberOfDiv.map((num) => (
                                 <div
@@ -52,8 +53,8 @@ const Select = () => {
                     </div>
                     <div className='flex justify-center mt-10'>
                         <Link
-                        to={"/dice"}
-                        className='bg-transparent border-2 border-dotted p-3
+                            to={"/dice"}
+                            className='bg-transparent border-2 border-dotted p-3
                        border-black w-40 shadow-lg hover:scale-105 transition transform
                        outline-none animate-slide-in text-center'>Next</Link>
                     </div>
